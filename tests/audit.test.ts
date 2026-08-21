@@ -5,6 +5,7 @@ import { normalizeAuditUrl } from "../lib/url";
 import { parsePage } from "../lib/parse-page";
 import { runAuditOnHtml } from "../lib/audit/run-audit";
 import { allChecks } from "../lib/checks";
+import { looksLikeBotChallenge } from "../lib/fetch-page";
 
 const fixtures = join(__dirname, "fixtures");
 
@@ -67,5 +68,16 @@ describe("runAuditOnHtml", () => {
 describe("registry", () => {
   it("has at least 8 checks", () => {
     expect(allChecks.length).toBeGreaterThanOrEqual(8);
+  });
+});
+
+describe("looksLikeBotChallenge", () => {
+  it("detects cloudflare interstitial", () => {
+    expect(
+      looksLikeBotChallenge(
+        "<html><title>Just a moment...</title><body>cloudflare challenge-platform</body></html>",
+        403,
+      ),
+    ).toBe(true);
   });
 });

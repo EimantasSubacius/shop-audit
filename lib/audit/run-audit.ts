@@ -1,6 +1,10 @@
 import { allChecks } from "@/lib/checks";
 import { withScore } from "@/lib/checks/helpers";
-import { fetchPage } from "@/lib/fetch-page";
+import {
+  describeFetchBlock,
+  fetchPage,
+  looksLikeBotChallenge,
+} from "@/lib/fetch-page";
 import { parsePage } from "@/lib/parse-page";
 import { deriveTopFixes, scoreChecks } from "@/lib/score/calculate-score";
 import type { AuditReport, CheckResult, ParsedPage } from "@/lib/types";
@@ -90,12 +94,15 @@ export async function runAudit(rawUrl: string): Promise<
     };
   }
 
-  if (fetched.status >= 400) {
+  if (
+    fetched.status >= 400 ||
+    looksLikeBotChallenge(fetched.html, fetched.status)
+  ) {
     return {
       ok: true,
       report: buildFetchFailedReport(
         normalized.url,
-        `HTTP ${fetched.status} from ${fetched.finalUrl}`,
+        describeFetchBlock(fetched.status, fetched.finalUrl, fetched.html),
         fetched.timingMs,
       ),
     };

@@ -66,7 +66,8 @@ Sample: [`examples/sample-report.json`](examples/sample-report.json)
 
 - Homepage HTML only (no product catalog crawl)
 - Best-effort in-memory rate limit (5/min/IP on a single instance)
-- Some sites block bots: fetch may fail; the UI still shows a report
+- Some sites block bots / Cloudflare challenges: fetch may fail with a clear message
+- Browser-like headers + UA retry help milder WAFs; hard bot walls still win
 - Not affiliated with audited shops
 
 ## License
