@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Shop Audit — ecommerce homepage health check",
+  title: "Shop Audit: ecommerce homepage health check",
   description:
     "Paste a shop URL and get a scored checklist for SEO, checkout friction, and trust signals.",
 };

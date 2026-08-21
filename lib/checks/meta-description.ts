@@ -22,7 +22,7 @@ export const metaDescriptionCheck = defineCheck({
         title: "Meta description",
         weight: 6,
         status: "warn",
-        message: `Meta description length is ${len} chars (aim ~50–160).`,
+        message: `Meta description length is ${len} chars (aim ~50-160).`,
         evidence: desc.slice(0, 120),
       };
     }

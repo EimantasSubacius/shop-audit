@@ -14,7 +14,7 @@ Heuristic scan of the public homepage only (SEO basics, mobile viewport, cart/ch
 
 ## Features
 
-- Weighted score 0–100
+- Weighted score 0-100
 - 12 automated checks
 - Top 3 actionable fixes
 - Simple rate-limited API
@@ -66,7 +66,7 @@ Sample: [`examples/sample-report.json`](examples/sample-report.json)
 
 - Homepage HTML only (no product catalog crawl)
 - Best-effort in-memory rate limit (5/min/IP on a single instance)
-- Some sites block bots — fetch may fail; the UI still shows a report
+- Some sites block bots: fetch may fail; the UI still shows a report
 - Not affiliated with audited shops
 
 ## License

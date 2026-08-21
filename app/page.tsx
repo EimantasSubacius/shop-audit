@@ -29,7 +29,7 @@ export default function Home() {
         </h1>
         <p className="mt-4 max-w-xl font-[family-name:var(--font-sans)] text-base text-stone-600 sm:text-lg">
           Checks HTTPS, SEO basics, mobile viewport, cart/checkout signals, and
-          trust pages — then ranks the top fixes.
+          trust pages, then ranks the top fixes.
         </p>
 
         <div className="mt-10 font-[family-name:var(--font-sans)]">
@@ -37,7 +37,7 @@ export default function Home() {
         </div>
 
         <p className="mt-16 max-w-2xl text-xs leading-relaxed text-stone-500">
-          Heuristic homepage scan only — not a full crawl, security audit, or
+          Heuristic homepage scan only. Not a full crawl, security audit, or
           legal advice. Not affiliated with audited shops.
         </p>
       </div>

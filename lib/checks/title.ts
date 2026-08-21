@@ -22,7 +22,7 @@ export const titleCheck = defineCheck({
         title: "Page title",
         weight: 8,
         status: "warn",
-        message: `Title length is ${len} chars (aim ~30–60).`,
+        message: `Title length is ${len} chars (aim ~30-60).`,
         evidence: title,
       };
     }
