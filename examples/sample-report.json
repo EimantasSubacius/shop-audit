@@ -1,0 +1,133 @@
+{
+  "url": "https://www.apple.com/",
+  "finalUrl": "https://www.apple.com/",
+  "fetchedAt": "2026-08-21T07:10:55.567Z",
+  "durationMs": 33,
+  "totalScore": 48,
+  "maxScore": 82,
+  "percent": 59,
+  "checks": [
+    {
+      "id": "https",
+      "title": "HTTPS",
+      "weight": 10,
+      "status": "pass",
+      "message": "Site is served over HTTPS.",
+      "evidence": "https://www.apple.com/",
+      "score": 10
+    },
+    {
+      "id": "title",
+      "title": "Page title",
+      "weight": 8,
+      "status": "warn",
+      "message": "Title length is 5 chars (aim ~30–60).",
+      "evidence": "Apple",
+      "score": 4
+    },
+    {
+      "id": "meta_description",
+      "title": "Meta description",
+      "weight": 6,
+      "status": "warn",
+      "message": "Meta description length is 172 chars (aim ~50–160).",
+      "evidence": "Discover the innovative world of Apple and shop everything iPhone, iPad, Apple Watch, Mac, and Apple TV, plus explore ac",
+      "score": 3
+    },
+    {
+      "id": "h1",
+      "title": "H1 heading",
+      "weight": 6,
+      "status": "pass",
+      "message": "Exactly one H1 found.",
+      "evidence": "Apple",
+      "score": 6
+    },
+    {
+      "id": "og_image",
+      "title": "Open Graph image",
+      "weight": 4,
+      "status": "pass",
+      "message": "Open Graph image is set.",
+      "evidence": "https://www.apple.com/ac/structured-data/images/open_graph_logo.png?202604211141",
+      "score": 4
+    },
+    {
+      "id": "viewport",
+      "title": "Mobile viewport",
+      "weight": 8,
+      "status": "pass",
+      "message": "Viewport meta tag is present.",
+      "score": 8
+    },
+    {
+      "id": "img_alt",
+      "title": "Image alt text",
+      "weight": 5,
+      "status": "fail",
+      "message": "82% of images missing alt text (41/50).",
+      "score": 0
+    },
+    {
+      "id": "cart_link",
+      "title": "Cart link",
+      "weight": 10,
+      "status": "fail",
+      "message": "No obvious cart/basket link found. Shoppers need a clear path to cart.",
+      "score": 0
+    },
+    {
+      "id": "checkout_signal",
+      "title": "Checkout signal",
+      "weight": 8,
+      "status": "fail",
+      "message": "No checkout or cart signals found on the homepage.",
+      "score": 0
+    },
+    {
+      "id": "contact_page",
+      "title": "Contact page",
+      "weight": 5,
+      "status": "pass",
+      "message": "Contact page link detected.",
+      "evidence": "Contact Apple → https://www.apple.com/contact/",
+      "score": 5
+    },
+    {
+      "id": "policy_pages",
+      "title": "Policy pages",
+      "weight": 8,
+      "status": "warn",
+      "message": "Only found: returns, privacy. Add missing trust/policy pages.",
+      "evidence": "returns, privacy",
+      "score": 4
+    },
+    {
+      "id": "footer_contact",
+      "title": "Contact signals",
+      "weight": 4,
+      "status": "pass",
+      "message": "Email or phone contact signal found in page HTML.",
+      "evidence": "202604211141",
+      "score": 4
+    }
+  ],
+  "topFixes": [
+    {
+      "id": "cart_link",
+      "title": "Cart link",
+      "message": "No obvious cart/basket link found. Shoppers need a clear path to cart."
+    },
+    {
+      "id": "checkout_signal",
+      "title": "Checkout signal",
+      "message": "No checkout or cart signals found on the homepage."
+    },
+    {
+      "id": "img_alt",
+      "title": "Image alt text",
+      "message": "82% of images missing alt text (41/50)."
+    }
+  ],
+  "fetchOk": true
+}

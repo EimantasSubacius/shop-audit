@@ -2,6 +2,14 @@
 
 Paste an ecommerce URL → get a **homepage health score** plus a checklist and top fixes.
 
+**Live demo:** [https://shop-audit-beta.vercel.app](https://shop-audit-beta.vercel.app)
+
+![Shop Audit home](public/screenshots/home.jpg)
+
+![High score results](public/screenshots/results-high.jpg)
+
+![Low score results](public/screenshots/results-low.jpg)
+
 Heuristic scan of the public homepage only (SEO basics, mobile viewport, cart/checkout signals, trust/policy pages). Not a full crawl, security audit, or legal advice.
 
 ## Features
@@ -39,6 +47,8 @@ npm run build
 
 Returns an `AuditReport` JSON object (`percent`, `checks`, `topFixes`, …).
 
+Sample: [`examples/sample-report.json`](examples/sample-report.json)
+
 ## Scoring (MVP)
 
 | Area | Examples |
@@ -58,10 +68,6 @@ Returns an `AuditReport` JSON object (`percent`, `checks`, `topFixes`, …).
 - Best-effort in-memory rate limit (5/min/IP on a single instance)
 - Some sites block bots — fetch may fail; the UI still shows a report
 - Not affiliated with audited shops
-
-## Live demo
-
-TBD after Vercel deploy.
 
 ## License
 
